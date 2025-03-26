@@ -1,0 +1,10 @@
+# build files
+
+build/
+install/
+core
+log/
+
+# cache files
+
+*.pyc
