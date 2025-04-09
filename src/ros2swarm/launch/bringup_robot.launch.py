@@ -102,7 +102,7 @@ def generate_launch_description():
         turtle_namespace = ['robot_', str(robot_number)]
         turtle_node = IncludeLaunchDescription(
             PythonLaunchDescriptionSource([launch_file_dir_ugv, '/bringup_lidar.launch.py']),
-            launch_arguments={'turtle_namespace': turtle_namespace, 'use_rviz':'true'}.items(),
+            launch_arguments={'turtle_namespace': turtle_namespace, 'use_rviz':'false'}.items(),
         )
         ld.add_action(turtle_node)
 

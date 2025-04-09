@@ -15,10 +15,12 @@
 colcon build --symlink-install &&
  source ./install/setup.bash &&
  ROS_DOMAIN_ID=42 ros2 launch ros2swarm bringup_robot.launch.py \
- pattern:=dispersion_pattern \
+ pattern:=aggregation_pattern \
  log_level:=debug \
  robot:=waffle_pi \
- robot_number:="1"
+ robot_number:="2" 
+
+ 
 # pattern_name:
 ## movement pattern: drive_pattern | dispersion_pattern | aggregation_pattern | flocking_pattern | flocking_pattern2 | attraction_pattern | attraction_pattern2 | magnetometer_pattern | minimalist_flocking_pattern | discussed_dispersion_pattern | beeclust_pattern
 ## voting_pattern: voter_model_pattern | voter_model_with_limiter_pattern | majority_rule_pattern
